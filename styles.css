@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section article{
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: .5rem;
+    background: hsl(0, 0%, 95%);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+section article .column{
+    flex-basis: 33.33%;
+    min-height: 70vh;
+    padding: 3rem;
+}
+
+section article .column:nth-child(1){
+    background: hsl(31, 77%, 52%);
+    animation: animate 1s;
+}
+
+section article .column:nth-child(2){
+    background: hsl(184, 100%, 22%);
+    animation: animate2 1s;
+}
+
+section article .column:nth-child(3){
+    background: hsl(179, 100%, 13%);
+    animation: animate3 1s;
+}
+
+section article .column img{
+    margin-bottom: 2rem;
+}
+
+section article .column h1{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+section article .column h2{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+section article .column h3{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+section article .column p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 5.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    animation: para 1s;
+}
+
+@keyframes para{
+    0%{
+        transform: rotateX(-45deg);
+    }
+    100%{
+        transform: rotateX(0);
+    }
+}
+
+section article .column a{
+    text-decoration: none;
+    background: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    padding: .7rem 1.5rem;   
+    font-weight: 700; 
+    transition: .5s;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+section article .column a:hover{
+    background: transparent;
+}
+
+section article .column:nth-child(1) a{
+    color: hsl(31, 77%, 52%);
+    
+}
+
+section article .column:nth-child(1) a:hover{
+    color: hsl(0, 0%, 95%);
+}
+
+section article .column:nth-child(2) a{
+    color: hsl(184, 100%, 22%);
+}
+
+section article .column:nth-child(2) a:hover{
+    color: hsl(0, 0%, 95%);
+}
+
+section article .column:nth-child(3) a{
+    color: hsl(179, 100%, 13%);
+}
+
+section article .column:nth-child(3) a:hover{
+    color: hsl(0, 0%, 95%);
+}
+
+/** Animation for each column **/
+
+@keyframes animate{
+    0%{
+        transform: translateX(-5rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateY(-5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate3{
+    0%{
+        transform: translateX(5rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+section .attribution{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+section .attribution a{
+    text-decoration: none;
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+
+
+/** Responsive design starts here **/
+@media (max-width: 991px){
+    section article {
+        width: 90%;
+        height: 100%;
+        margin: 4rem 0 4rem;
+    }
+
+    section article .column {
+        flex-basis: 100%;
+        min-height: 70vh;
+        padding: 3rem;
+    }
+
+    section .attribution {
+        bottom: 1rem;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    section .attribution a {
+        font-size: .8rem;
+    }
+
+    section article .column:nth-child(1){
+        animation: none;
+    }
+    
+    section article .column:nth-child(2){
+        animation: none;
+    }
+    
+    section article .column:nth-child(3){
+        animation: none;
+    }
+    
+}
+
+@media (max-width: 320px){
+    section article .column p{
+        font-size: 1rem;
+    }
+}
