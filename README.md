@@ -85,7 +85,7 @@ Below is a code snippet of how I animated each Column layout on page load.
 
 ### Continued development
 
-Moving on, animation is one part of css I have not mastered, so for my next couple of projects, I'm going to ensure I play around with animations. Just like they say, PRACTICE makes PERFECT.
+Moving on, animation is one part of css I have not mastered, so for my next couple of projects, I'm going to ensure I play around with animations. Just like the saying goes, PRACTICE makes PERFECT.
 
 ## Author
 
@@ -96,4 +96,4 @@ Moving on, animation is one part of css I have not mastered, so for my next coup
 
 ## Appreciation
 
-I'll like to thank the entire team at [Frontend Mentor](https://www.frontendmentor.io). for putting together yet another wonderful design to help Developer build realistic projects.
+I'll like to thank the entire team at [Frontend Mentor](https://www.frontendmentor.io). for putting together yet another wonderful design to help Developers build realistic projects.
