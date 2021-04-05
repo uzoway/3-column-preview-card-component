@@ -26,7 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of Solution](./Screenshot (12).png)
+![Blogr landing page coding challenge](./design/desktop-design.jpg)
+![Screenshot of Solution](./Screenshot.jpg)
 
 ### Links
 
