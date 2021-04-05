@@ -90,6 +90,10 @@ section article .column p{
     animation: para 1s;
 }
 
+/*
+Animation for the column paragraph
+*/
+
 @keyframes para{
     0%{
         transform: rotateX(-45deg);
