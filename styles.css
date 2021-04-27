@@ -20,6 +20,7 @@ section{
     top: 2rem;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
     color: #111;
 }
 
